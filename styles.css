@@ -7,13 +7,108 @@
 
 /*variables*/
 :root {
-  --fundo: #09090A;
+  --fundo: #09090a;
 }
 
 /*body of the page*/
 body {
   background-color: var(--fundo);
-  display: grid;
   height: 100vh;
-  place-items: center;
+  color: white;
+}
+
+/*
+body * {
+  border: 1px solid red;
+}
+*/
+
+/*Cabeçalho*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+}
+
+/*Botão de registrar*/
+button {
+  padding: 16px 24px;
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/*caixa principal*/
+#form-habits {
+  display: flex;
+  padding: 0 48px;
+}
+
+/*caixa dos habitos*/
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+/*Icones dos habitos*/
+.habit {
+  width: 40px;
+  height: 64px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Caixa principal dos dias*/
+.days {
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+}
+
+/*caixa do dia*/
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: #A1A1AA;
+  text-align: center;
+}
+
+/*cheked onde solecionar*/
+input {
+  appearance: none; /*Tira a aparencia padrão*/
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px; 
+  border: 2px solid #27272A;
+  border-radius: 8px;
+}
+
+/*pseudo selector*/
+input:checked {
+  background: #8B5CF6;
+  border: 2px solid #A78BFA;
+  border-radius: 8px;
 }
