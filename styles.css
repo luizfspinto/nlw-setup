@@ -29,6 +29,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 48px;
+
+  position: fixed;
+  background-color: black;
+  width: 100%;
 }
 
 /*Botão de registrar*/
@@ -50,7 +54,8 @@ button {
 /*caixa principal*/
 #form-habits {
   display: flex;
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: fit-content; /*Encaixe o conteúdo na largura*/
 }
 
 /*caixa dos habitos*/
@@ -111,4 +116,12 @@ input:checked {
   background: #8B5CF6;
   border: 2px solid #A78BFA;
   border-radius: 8px;
+}
+
+
+/*mobile responsive*/
+@media (max-width:570px){
+  button div {
+    display: none;
+  }
 }
