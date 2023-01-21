@@ -31,7 +31,7 @@ header {
   padding: 48px;
 
   position: fixed;
-  background-color: black;
+  background-color: var(--fundo);
   width: 100%;
 }
 
